@@ -1,0 +1,5 @@
+# 署名鍵・秘密ファイル（CLAUDE.md「署名鍵・秘密ファイルの運用」参照）
+*.keystore
+*.jks
+google-services.json
+*.env

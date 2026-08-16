@@ -2,6 +2,20 @@
 
 セッションが切れても文脈が追えるよう、区切りごとに追記する（上に最新を追加）。
 
+## 2026-08-16（続きその2）
+
+- ブランチ運用（1ブランチ=1機能・修正単位、バグ修正は元ブランチに戻らず
+  mainから新規ブランチ、`git pull origin main`で反映）をCLAUDE.mdに明記
+- kakeibo-appに実態を聞き取り、以下をCLAUDE.mdに追加反映:
+  - PR作成を必須化（mainへの直接push・force push原則禁止、レビューは
+    1人開発のため不要でセルフマージ可）
+  - コミットメッセージ規約（`<type>: 日本語要約`、Conventional Commits準拠）
+  - CI雛形は技術スタック決定直後、機能実装より先に用意する方針
+  - 署名鍵の運用（debug鍵はプロジェクト専用生成・base64化してGitHub Secrets
+    経由で復元、release鍵は保留）。`.gitignore`に`*.keystore` `*.jks`
+    `google-services.json` `*.env` を先行登録
+- 次にやること: 技術スタックの選定、対象行動の詳細要件
+
 ## 2026-08-16（続き）
 
 - kakeibo-app開発での改善点を踏まえ、ドキュメント運用ルールを見直した:
