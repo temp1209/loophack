@@ -8,6 +8,7 @@ CLAUDE.md（リポジトリ直下）を読んだ上で、詳細はここから�
 | ファイル | 内容 |
 |---|---|
 | [requirements.md](./requirements.md) | 要件定義書（1つに集約。変更は変更履歴に追記） |
+| [decisions.md](./decisions.md) | 設計判断ログ（結論に至った思考過程・却下した案を追記） |
 | [implementation-plan.md](./implementation-plan.md) | 実装計画（TODOリストとして運用） |
 | [handoff.md](./handoff.md) | エージェント/開発再開時の引き継ぎメモ |
 | [debugging.md](./debugging.md) | 実機・実環境でのデバッグ手順 |
